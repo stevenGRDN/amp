@@ -1,0 +1,132 @@
+.appContainer{
+    background: linear-gradient(to bottom right, #2B333E, #181D24);
+}
+
+.AMPtext{
+    background: linear-gradient(to bottom, #E1E9EA, #4B596C);
+}
+
+.settingsText{
+    color: #E1E9EA;
+}
+
+.settingSelect{
+    color: #E1E9EA;
+}
+
+.settingRectangle{
+    background-color: #212833;
+    box-shadow: min(0.66vh, 1.44vw) min(0.66vh, 1.44vw) min(1.87vh, 4vw) rgb(14, 18, 26, 1), min(-0.24vh, -0.52vw) min(-0.18vh, -0.4vw) min(1.245vh, 2.7vw) min(-0.33vh, -0.72vw) rgb(169, 193, 255, 0.3);
+}
+
+.themeTitle{
+  color: #fff;
+}
+.themeName{
+  color: #fff;
+}
+.themeDesc{
+  color: #fff;
+}
+
+.themeBGDefault{
+    background: #212833;
+    box-shadow: min(0.66vh, 1.44vw) min(0.66vh, 1.44vw) min(1.87vh, 4vw) rgb(14, 18, 26, 1), min(-0.24vh, -0.52vw) min(-0.18vh, -0.4vw) min(1.245vh, 2.7vw) min(-0.33vh, -0.72vw) rgb(169, 193, 255, 0.3);
+}
+
+.themeBGSelected{
+    background: linear-gradient(150deg, #CEDCF2, #7989A0) padding-box,
+                linear-gradient(to bottom right, #E6EFFC, #445876) border-box;
+    box-shadow: min(0.66vh, 1.44vw) min(0.66vh, 1.44vw) min(1.87vh, 4vw) rgb(14, 18, 26, 0.8),
+                min(-0.24vh, -0.52vw) min(-0.18vh, -0.4vw) min(1.245vh, 2.7vw) min(-0.2vh, -0.434vw) rgb(169, 193, 255, 0.3),
+                inset min(-0.8vh, -1.735vw) min(-0.8vh, -1.735vw) min(1.87vh, 4vw) min(-1vh, -2.1687vw) rgba(255, 255, 255, 0.9),
+                inset min(0.66vh, 1.44vw) min(0.8vh, 1.735vw) min(1.5vh, 3.25vw) min(-0.5vh, -1.08vw) rgb(0, 0, 0, 0.6);
+}
+
+.radioTheme:checked ~ .themeInfo p{color: #11294D;}
+.radioTheme:checked ~ .themeInfo svg path{fill: #11294D;}
+
+.themeCol{
+    box-shadow: 0 min(0.2vh, 0.434vw) min(0.8vh, 1.735vw) rgba(0,0,0,0.5);
+}
+
+.themePreference{
+    background-color: rgba(72, 84, 99, 0.9);
+    color: #fff;
+}
+
+.tpOverlay{
+    background: linear-gradient(to right, rgba(72, 84, 99, 1) 0%, rgba(72, 84, 99, 0) 30%, rgba(72, 84, 99, 0) 70%, rgba(72, 84, 99, 1) 100%);
+}
+
+.tpImport{
+    background-color: #636E7E;
+    box-shadow: min(0.5vh, 1.084vw) min(0.5vh, 1.084vw) min(1.6vh, 3.47vw) rgb(14, 18, 26, 0.58), min(-0.24vh, -0.52vw) min(-0.18vh, -0.4vw) min(1.4vh, 3.04vw) min(-0.2vh, -0.434vw) rgb(169, 193, 255, 0.3);
+}
+
+
+.appContainer{transition: background 0.3s ease;}
+.AMPtext{transition: background 0.3s ease;}
+.settingsText{transition: color 0.3s ease;}
+.settingSelect{transition: color 0.3s ease;}
+.settingRectangle{transition: background-color 0.3s ease, box-shadow 0.3s ease;}
+.themeTitle{transition: color 0.3s ease;}
+.themeName{transition: color 0.3s ease;}
+.themeDesc{transition: color 0.3s ease;}
+.themeBGDefault{transition: background 0.3s ease, box-shadow 0.3s ease;}
+.themeBGSelected{transition: background 0.3s ease, box-shadow 0.3s ease;}
+.themeInfo p{transition: color 0.3s ease;}
+.themeInfo svg path{transition: fill 0.3s ease;}
+.themeCol{transition: box-shadow 0.3s ease;}
+.themePreference{transition: background-color 0.3s ease, color 0.3s ease;}
+.tpOverlay{transition: background 0.3s ease;}
+.tpImport{transition: background-color 0.3s ease, box-shadow 0.3s ease;}
+
+.colorCreator{
+    color: rgb(26, 23, 21);
+    color: rgb(255, 225, 204);
+    color: rgb(128, 109, 96);
+    color: #F5E6C8;
+    color: #806D60;
+    color: #141414;
+    color: rgb(20, 20, 20);
+    color: #D4D4D4;
+    color: rgb(212, 212, 212);
+    color: #FFE2A9;
+    color: rgb(255, 226, 169);
+    color: #1A160E;
+    color: rgb(26, 22, 14);
+    color: #0E121A;
+    color: rgb(14, 18, 26);
+    color: #DCE9FF;
+    color: rgb(220, 233, 255);
+    color: #1D2531;
+    color: rgba(29, 37, 49, 0.45);
+    color: #11294D;
+    color: rgba(72, 84, 99, 0.9);
+    color: #9BA7B6;
+    color: rgb(155, 167, 182);
+    color: #C8D6EE;
+    color: rgb(200, 214, 238);
+    color: #AABCDB;
+    color: rgb(186 201 226);
+    color: #bac9e2;
+    color: #DCE9FF;
+    color: rgb(36, 43, 56);
+    color: #242B38;
+    color: #3E4D67;
+    color: rgb(62, 77, 103);
+    color: #131720;
+    color: rgb(19, 23, 32);
+    color: #131313;
+    color: rgb(19, 19, 19);
+    color: #FFF3DC;
+    color: rgb(255, 243, 220);
+    color: #FFF7E8;
+    color: rgb(255, 247, 232);
+    color: rgb(255, 252, 245);
+    color: #FFFCF5;
+    
+    color: #312A1D;
+    color: rgba(49, 42, 29, 0.4);
+}

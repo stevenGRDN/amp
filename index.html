@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<style>
+
+  html{
+    box-sizing: border-box;
+  }
+
+  *,
+  *::after,
+  *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    width:100svw;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    font-family: "Outfit", Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    place-content: center;
+  }
+
+  .container{
+    width:100vw;
+    padding: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
+  .file-img{
+    aspect-ratio: 1/2;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .file{
+    width: 25%;
+    text-align: center;
+  }
+
+  .file-text{
+    color: #333;
+    font-size: max(1.2vw, 1rem);
+    margin-top: 0.5rem;
+  }
+
+  .img{
+    position: absolute;
+    width:100%;
+    left:50%;
+    top:50%;
+    translate: -50% -50%;
+    /* height:100%; */
+  }
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="file">
+      <a href="landingPage.html">
+
+        <div class="file-img">
+          <img class="img" src="landingPage.png" alt="">
+        </div>
+        <div class="file-text">Landing Page</div>
+      </a>
+    </div>
+    <div class="file">
+      <a href="player.html">
+
+        <div class="file-img">
+          <img class="img" src="player.png" alt="">
+        </div>
+        <div class="file-text">Music Player</div>
+      </a>
+    </div>
+    <div class="file">
+      <a href="theme.html">
+
+        <div class="file-img">
+          <img class="img" src="theme.png" alt="">
+        </div>
+        <div class="file-text">Themes</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

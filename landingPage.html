@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+<style>
+
+  html{
+    box-sizing: border-box;
+  }
+
+  *,
+  *::after,
+  *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    width:100svw;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    font-family: "Outfit", Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    place-content: center;
+    background-color: #444;
+  }
+
+  .appContainer{
+    /* position: absolute; */
+    position: relative;
+    height:min(95vh, 200vw);
+    aspect-ratio: 83/180;
+    /* max-width: calc(100% - 5vh); */
+    display: grid;
+    place-content: center;
+    /* background: #fff; */
+    /* font-size: min(12vh, 24vw);
+    font-weight: 800; */
+    overflow: hidden;
+    background: linear-gradient(to bottom, #2A303C, #151920);
+    /* background-color: red; */
+  }
+
+
+
+  .linearBG{
+    position: absolute;
+    top:50%;
+    left:50%;
+    translate: -50% -50%;
+    width:90%;
+    height:20%;
+    background: linear-gradient(to bottom, #4F5359, #292E35);
+    animation: BGOpacity 0s ease 5.5s 1 forwards;
+  }
+
+  .linearBG1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    translate: -50% -50%;
+    width:90%;
+    height:20%;
+    background: linear-gradient(to bottom, #E1E9EA, #4B596C);
+    opacity: 0;
+    animation: Opacity1 1.5s ease 4s 1 forwards, BGOpacity 0s ease 5.5s 1 forwards;
+  }
+
+  .linearGrad{
+    /* animation: ; */
+  }
+
+  .BG{
+    height:min(95vh, 200vw);
+    aspect-ratio: 83/180; 
+    filter: drop-shadow(12px 2px 8px rgba(0,0,0,0.25));
+    animation: dropShadow 2s ease 2s 1 forwards, BGOpacity 1s ease 5.5s 1 forwards;
+  }
+
+  .BG path{
+    /* fill:; */
+    /* mix-blend-mode: lighten; */
+    /* background: red; */
+  }
+
+  .gradientBig{
+    translate: -40% 0%;
+    rotate: -46deg;
+    animation: gradientBig 2s ease 2s 1 forwards;
+
+    /* translate: 0% 0%;
+    rotate: 10deg; */
+  }
+
+  .welcomeText{
+    position: absolute;
+    top:50%;
+    left:50%;
+    translate: -50% -65%;
+    width: 66.6%;
+    font-size: min(2.4vh, 4.8vw);
+    font-weight: 600;
+    color: #E1E9EA;
+    text-align: center;
+    opacity: 0;
+    /* animation-name: Opacity1;
+    animation-duration: 1s;
+    animation-delay: 6s; */
+    animation: Opacity1 1s ease 6.4s 1 forwards;
+  }
+
+  .startText{
+    position: absolute;
+    top:80%;
+    left:50%;
+    translate: -50% -50%;
+    padding: min(0.6vh, 1.2vw) min(5vh, 10vw);
+    border-radius: min(0.8vh, 1.6vw);
+    font-size: min(2.2vh, 4.4vw);
+    font-weight: 600;
+    color: #1C232E;
+    background-color: #E1E9EA;
+    text-align: center;
+    opacity: 0;
+    /* animation-name: Opacity1;
+    animation-duration: 1s;
+    animation-delay: 6s; */
+    animation: Opacity1 1s ease 6.4s 1 forwards;
+  }
+
+  .AMP3{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width: 66.6%;
+    transform: translate(-49.89%, -55.5%);
+    opacity: 0;
+    animation: Opacity1 1s ease 4.5s 1 forwards, translate1 1s ease 6s 1 forwards;
+  }
+
+  .AMP3 *{
+    /* fill: #222 */
+  }
+
+
+
+  @keyframes dropShadow{
+    0%{
+      filter: drop-shadow(12px 2px 8px rgba(0,0,0,0.25));
+    }
+
+    100%{
+      filter: drop-shadow(2px 12px 8px rgba(0,0,0,0.25));
+    }
+  }
+
+  @keyframes gradientBig{
+    0%{
+      translate: -40% 0%;
+    rotate: -46deg;
+    }
+    100%{
+          translate: 0% 0%;
+    rotate: 10deg;
+    }
+  }
+
+  @keyframes Opacity1{
+    0%{
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 1;
+    }
+  }
+
+  @keyframes BGOpacity {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+  @keyframes translate1 {
+    0%{
+      translate:0% 0% ;
+    }
+    100%{
+      translate:0% -125%;
+    }
+  }
+
+  a:link {
+    text-decoration: inherit;
+    color: inherit;
+  }
+
+  a:visited {
+    text-decoration: inherit;
+    color: inherit;
+  }
+
+</style>
+
+</head>
+<body>
+  <div class="appContainer">
+    <div class="background">
+
+    </div>
+    <!-- <div class="centeredText">
+      AMP
+    </div> -->
+    
+    <div class="linearBG linearGrad"></div>
+    <div class="linearBG1 linearGrad"></div>
+    <svg class="BG" viewBox="0 0 664 1440" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_868_17)">
+      <path d="M515.2 676.6C516.907 679.782 517.8 683.338 517.8 686.95C517.8 690.561 516.907 694.117 515.2 697.3C513.575 700.062 511.176 702.287 508.3 703.7C505.337 705.12 502.086 705.839 498.8 705.8H478.2V668H498.8C502.098 667.96 505.356 668.714 508.3 670.2C511.147 671.655 513.535 673.87 515.2 676.6Z" fill="url(#paint0_linear_868_17)"/>
+      <path d="M0 0V1440H664V0H0ZM218.6 783.2L210.07 758.4H157.45L148.8 783.2H111.8L167 641.4H201.6L256.2 783.2H218.6ZM417.2 783.2H381.6V710.72L355 751.2H331.4L304.8 710.47V783.2H269.2V641.4H295L343.29 714.64L391.4 641.4H417.2V783.2ZM546.8 711.4C542.599 718.135 536.61 723.57 529.5 727.1C521.819 730.864 513.353 732.749 504.8 732.6H478.2V783.2H442.4V641.4H504.8C513.341 641.254 521.799 643.103 529.5 646.8C536.618 650.271 542.614 655.677 546.8 662.4C551.06 669.2 553.193 677.4 553.2 687C553.2 696.473 551.067 704.607 546.8 711.4ZM167.37 730H200.3L184 682.47L167.37 730Z" fill="url(#paint1_linear_868_17)"/>
+      </g>
+      <defs>
+      <linearGradient class="gradientSmall" id="paint0_linear_868_17" x1="484.71" y1="665.15" x2="503.54" y2="705.86" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20262F"/>
+      <stop offset="1" stop-color="#1F242D"/>
+      </linearGradient>
+      <linearGradient class="gradientBig" id="paint1_linear_868_17" x1="1.38999" y1="5.2" x2="664.22" y2="1438.27" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2C333F"/>
+      <stop offset="1" stop-color="#14181E"/>
+      </linearGradient>
+      <clipPath id="clip0_868_17">
+      <rect width="664" height="1440" fill="white"/>
+      </clipPath>
+      </defs>
+    </svg>
+
+    
+    <svg class="AMP3" viewBox="0 0 442 143" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_i_803_364)">
+      <path d="M0.176563 142.668L55.1766 0.867959H89.7766L144.177 142.668H106.777L65.7766 23.468H78.7766L36.7766 142.668H0.176563ZM33.5766 117.868V89.468H111.777V117.868H33.5766ZM157.452 142.668V0.867959H183.252L237.652 83.068H225.452L279.652 0.867959H305.452V142.668H270.052V60.068L275.652 61.668L243.052 110.668H219.852L187.452 61.668L193.052 60.068V142.668H157.452ZM359.094 91.868V65.268H387.094C390.56 65.268 393.694 64.6013 396.494 63.268C399.427 61.8013 401.76 59.668 403.494 56.868C405.227 54.068 406.094 50.6013 406.094 46.468C406.094 42.3346 405.227 38.868 403.494 36.068C401.76 33.1346 399.427 31.0013 396.494 29.668C393.694 28.2013 390.56 27.468 387.094 27.468H359.094V0.867959H393.294C402.36 0.867959 410.56 2.73463 417.894 6.46796C425.227 10.068 431.027 15.268 435.294 22.068C439.56 28.7346 441.694 36.868 441.694 46.468C441.694 55.8013 439.56 63.9346 435.294 70.868C431.027 77.668 425.227 82.868 417.894 86.468C410.56 90.068 402.36 91.868 393.294 91.868H359.094ZM330.694 142.668V0.867959H366.494V142.668H330.694Z" fill="url(#paint0_linear_803_364)"/>
+      </g>
+      <defs>
+      <filter id="filter0_i_803_364" x="0.176514" y="0.867188" width="443.517" height="153.801" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dx="2" dy="12"/>
+      <feGaussianBlur stdDeviation="7.5"/>
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="shape" result="effect1_innerShadow_803_364"/>
+      </filter>
+      <linearGradient id="paint0_linear_803_364" x1="222" y1="-17.8363" x2="222" y2="194.668" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E1E9EA"/>
+      <stop offset="1" stop-color="#4B596C"/>
+      </linearGradient>
+      </defs>
+    </svg>
+
+    <p class="welcomeText">Welcome to Advanced <br> Music Player!</p>
+    <p class="startText"><a href="./landingPage.html">Start</a></p>
+
+  </div>
+</body>
+
+<script>
+  // let feOffset = document.querySelector('.feOffset');
+
+  // console.log(feOffset.getAttribute('dx'));
+  
+</script>
+</html>
